@@ -1,0 +1,126 @@
+.about-header-section {
+    // background: url(../../../assets/img/asz/career-detail-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+    .about-content-right {
+        img {
+            width: 100%;
+        }
+    }
+
+    .about-info {
+        margin-top: 93px;
+
+        h1 {
+            color: black;
+            font-size: 33px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .about-content-right img:last-of-type {
+            width: 100%;
+        }
+    }
+
+    .story-grid {
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .mob-pt-120 {
+        padding-top: 120px;
+    }
+
+}
+
+.description {
+    padding: 80px 0;
+
+    .business-analyst-icon {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .bracket {
+            span {
+                margin-right: 20px;
+
+                img {
+                    width: 80px;
+                }
+            }
+        }
+
+        .head {
+            h3 {
+                font-size: 20px;
+                font-weight: 600 !important;
+            }
+
+            h5 {
+                font-size: 16px;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+        font-weight: 600;
+        color: black;
+    }
+}
+
+.roles {
+    background: rgb(185,185,185);
+    background: linear-gradient(3deg, rgba(185,185,185,1) 0%, rgba(238,238,238,1) 100%);
+    padding: 20px 30px;
+    margin-top: 40px;
+
+    h4 {
+        font-size: 22px;
+        font-weight: 500 !important;
+    }
+
+    li {
+        font-size: 16px;
+        line-height: 33px;
+        color: black;
+        list-style: square;
+    }
+}
+
+.apply-now-btn {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .go {
+        margin-right: 10px;
+        background: #ed8021;
+        color: white;
+        border: 1px solid transparent;
+        padding: 5px 20px;
+        &:hover{
+            background: transparent;
+            border-color: #ed8021;
+            color: #ed8021;
+        }
+    }
+
+    .appnow {
+        background: transparent;
+        border: 1px solid #ed8021;
+        color:#ed8021;
+        padding: 5px 20px;
+        &:hover{
+            background: #ed8021;
+            color: white;
+        }
+    }
+}

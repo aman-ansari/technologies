@@ -1,0 +1,337 @@
+{
+  "teamMembers": [
+    {
+      "img": "../../../assets/img/testimonial/pic1.jpg",
+      "name": "Althaf Hussain D",
+      "desgnation": "Director"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic2.jpg",
+      "name": "Zakeer Hussain D",
+      "desgnation": "Director"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic6.jpg",
+      "name": "Fahima Tabassum K",
+      "desgnation": "Director"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic8.jpg",
+      "name": "Nayeema Tabassum K",
+      "desgnation": "Director"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic5.jpg",
+      "name": "Razda Yusuf",
+      "desgnation": "Talent Acquisition and Project Manager"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic5.jpg",
+      "name": "Noor Shaguftha",
+      "desgnation": "Talent Aquisition Manager"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic6.jpg",
+      "name": "Chaitra Reeta",
+      "desgnation": "Project Manager"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic1.jpg",
+      "name": "Md Aman",
+      "desgnation": "UI designer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic2.jpg",
+      "name": "Rashid Khan",
+      "desgnation": "UI designer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic3.jpg",
+      "name": "Yunush Khan",
+      "desgnation": "UI designer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic4.jpg",
+      "name": "Girish Semwal",
+      "desgnation": "UI designer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic1.jpg",
+      "name": "Ritesh Diliprao Kubde",
+      "desgnation": "UI designer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic2.jpg",
+      "name": "Mashuk Khan",
+      "desgnation": "Android & Java/Kotlin"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic3.jpg",
+      "name": "Shaique Khan",
+      "desgnation": "Android & Java/Kotlin"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic6.jpg",
+      "name": "Apeksha P",
+      "desgnation": "Android & Java/Kotlin"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic7.jpg",
+      "name": "Bhandavya",
+      "desgnation": "Talent Aquisition Team"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic8.jpg",
+      "name": "Ayesha Sadiq",
+      "desgnation": "Talent Aquisition Team"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic3.jpg",
+      "name": "Sohil Mansuri",
+      "desgnation": "Developer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic4.jpg",
+      "name": "Rashid Hassain",
+      "desgnation": "Developer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic1.jpg",
+      "name": "Keshava Banda",
+      "desgnation": "Developer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic2.jpg",
+      "name": "Prashanth Sutradhar",
+      "desgnation": "Developer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic3.jpg",
+      "name": "Syed Ameen Abrar",
+      "desgnation": "Developer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic1.jpg",
+      "name": "Ajay Singh",
+      "desgnation": "Developer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic2.jpg",
+      "name": "Thajuddin",
+      "desgnation": "Developer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic5.jpg",
+      "name": "Lareb Hashmi",
+      "desgnation": "Developer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic3.jpg",
+      "name": "Renu D",
+      "desgnation": "NodeJS Developer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic4.jpg",
+      "name": "Mritunjay Kumar",
+      "desgnation": "NodeJS Developer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic1.jpg",
+      "name": "Peetha Sasikumar",
+      "desgnation": "NodeJS Developer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic2.jpg",
+      "name": "Usman Pasha",
+      "desgnation": "NodeJS Developer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic3.jpg",
+      "name": "Daniel D'souza",
+      "desgnation": "NodeJS Developer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic4.jpg",
+      "name": "G. D. V Pavan Kumar Reddy",
+      "desgnation": "Dot Net Developer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic1.jpg",
+      "name": "Syed Suhail",
+      "desgnation": "Dot Net Developer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic2.jpg",
+      "name": "Kiran Varma",
+      "desgnation": "Dot Net Developer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic3.jpg",
+      "name": "Sudheer",
+      "desgnation": "Dot Net Developer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic4.jpg",
+      "name": "Mohammed Israr",
+      "desgnation": "Dot Net Developer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic1.jpg",
+      "name": "Inayath Pasha",
+      "desgnation": "Dot Net Developer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic2.jpg",
+      "name": "Pritam Savagavi",
+      "desgnation": "Dot Net Developer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic3.jpg",
+      "name": "Saquib Khan",
+      "desgnation": "Dot Net Developer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic4.jpg",
+      "name": "Ramesh S",
+      "desgnation": "Dot Net Developer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic1.jpg",
+      "name": "Ranjit",
+      "desgnation": "Dot Net Developer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic2.jpg",
+      "name": "Tetali Avinash krishna Reddy",
+      "desgnation": "Dot Net Developer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic3.jpg",
+      "name": "Padala Sai Venkata Krishna Reddy",
+      "desgnation": "Dot Net Developer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic4.jpg",
+      "name": "Mujtaba Suiddiqui",
+      "desgnation": "BlockChain Developer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic1.jpg",
+      "name": "Rajat Agarwal",
+      "desgnation": "BlockChain Developer"
+    },
+
+    {
+      "img": "../../../assets/img/testimonial/pic4.jpg",
+      "name": "Shivarudrappa Rumma",
+      "desgnation": "QA"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic1.jpg",
+      "name": "Mohamed Zahid Hussain",
+      "desgnation": "QA"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic8.jpg",
+      "name": "Rohini",
+      "desgnation": "QA"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic3.jpg",
+      "name": "Raghu K",
+      "desgnation": "QA"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic7.jpg",
+      "name": "Barkha Ramani",
+      "desgnation": "QA"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic1.jpg",
+      "name": "Naveen Kumar",
+      "desgnation": "QA"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic2.jpg",
+      "name": "Mayur Ambekar",
+      "desgnation": "QA"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic3.jpg",
+      "name": "Shaik Peer",
+      "desgnation": "QA"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic4.jpg",
+      "name": "Mohammed Imran",
+      "desgnation": "QA"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic1.jpg",
+      "name": "Adnan Alam",
+      "desgnation": "QA"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic1.jpg",
+      "name": "Vijay G",
+      "desgnation": "QA"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic7.jpg",
+      "name": "Shraddha P",
+      "desgnation": "QA"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic2.jpg",
+      "name": "G Satheesh Kumar",
+      "desgnation": "IOS developer"
+    },
+
+    {
+      "img": "../../../assets/img/testimonial/pic3.jpg",
+      "name": "Abhishek Kumar",
+      "desgnation": "Tech Support Team"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic4.jpg",
+      "name": "Abin Thomas",
+      "desgnation": "Tech Support Team"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic1.jpg",
+      "name": "Nani Pamidi",
+      "desgnation": "Tech Support Team"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic2.jpg",
+      "name": "Kukkala Suresh",
+      "desgnation": "Tech Support Team"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic3.jpg",
+      "name": "Anudeep Eswar",
+      "desgnation": "Tech Support Team"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic4.jpg",
+      "name": "M Srikanth",
+      "desgnation": "Tech Support Team"
+    },
+    
+    {
+      "img": "../../../assets/img/testimonial/pic1.jpg",
+      "name": "Mohammed Shahid",
+      "desgnation": "Flutter Developer"
+    },
+    {
+      "img": "../../../assets/img/testimonial/pic2.jpg",
+      "name": "Mohammed Rizwan",
+      "desgnation": "Flutter Developer"
+    }, 
+    {
+      "img": "../../../assets/img/testimonial/pic3.jpg",
+      "name": "Shaik Mohammed Abdul Azahar",
+      "desgnation": "Flutter Developer"
+    }
+  ]
+}

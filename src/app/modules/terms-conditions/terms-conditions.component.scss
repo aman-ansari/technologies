@@ -1,0 +1,25 @@
+.about-header-section{
+    background: #d2dfff;
+    background: linear-gradient(106deg, #d2dfff 0%, #8c9ef4 70%);
+}
+
+@media (max-width: 768px) {
+    .mob-pt {
+        padding-top: 100px;
+    }
+
+    .left-0{
+        left: 0 !important;
+    }
+    .z-index-1{
+        z-index: 10;
+    }
+}
+
+
+.support-article-tab.nav-pills .nav-link.active,
+.support-article-tab.nav-pills .show>.nav-link {
+  color: #2b4acb;
+    background: transparent;
+    font-weight: 600;
+}  

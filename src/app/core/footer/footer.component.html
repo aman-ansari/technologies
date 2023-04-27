@@ -1,0 +1,179 @@
+<!--footer section start-->
+<footer
+  [ngClass]="
+    router.url === '/home' ? 'footer-section home-footer' : 'footer-section'
+  "
+>
+  <!--footer top start-->
+  <!--for light footer add .footer-light class and for dark footer add .bg-dark .text-white class-->
+  <!-- <div class="footer-top footer-light">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-3 col-lg-6 mb-md-4 mb-lg-0">
+                    <div class="footer-single-col">
+                        <div class="footer-single-col mb-4 footer-logo">
+                            <img src="assets/img/asz/logo-t.png" alt="logo" class="img-fluid logo-color">
+                        </div>
+                        <div class="footer-single-col text-start">
+                            <ul class="list-unstyled list-inline footer-social-list mb-0">
+                                <li class="list-inline-item"><a href="https://www.facebook.com/asztechnologies" target="_blank"><i
+                                            class="fab fa-facebook-f"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.linkedin.com/company/asz-technologies" target="_blank"><i
+                                            class="fab fa-linkedin"></i></a></li>
+                                <li class="list-inline-item"><a href="mailto:info@asztechnologies.com?Subject=enquiry"
+                                        target="_blank"><i class="fa fa-envelope"></i></a></li>
+                                <li class="list-inline-item"><a href="https://login.skype.com/login?message=signin_continue"
+                                        target="_blank"><i class="fab fa-skype"></i></a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+               <div class="col-lg-5 col-md-6">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-6 mt-4 mt-md-0 mt-lg-0 d_sm_none">
+                            <div class="footer-single-col">
+                                <h3>Primary Pages</h3>
+                                <ul class="list-unstyled footer-nav-list mb-lg-0">
+                                    <li><a routerLink="/home" class="text-decoration-none">Home</a></li>
+                                    <li><a routerLink="/company" class="text-decoration-none">About Us</a></li>
+                                    <li><a routerLink="/career" class="text-decoration-none">Career</a></li>
+                                    <li><a routerLink="/contact-us" class="text-decoration-none">Contact Us</a></li>
+                                    <li><a class="text-decoration-none">Privacy Policy</a></li>
+                                    <li><a class="text-decoration-none">Terms & Conditions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-6 mt-6 mt-md-0 mt-lg-0 d_sm_none">
+                            <div class="footer-single-col">
+                                <h3>Our Services</h3>
+                                <ul class="list-unstyled footer-nav-list mb-lg-0">
+                                    <li><a routerLink="/web-development" class="text-decoration-none">Software Development</a></li>
+                                    <li><a routerLink="/sharepoint-consulting" class="text-decoration-none">Testing & QA</a></li>
+                                    <li><a routerLink="/mobile-development" class="text-decoration-none">Mobile Development</a></li>
+                                    <li><a routerLink="/bpo-services" class="text-decoration-none">UX/UI Design</a></li>
+                                    <li><a routerLink="/book-keeping" class="text-decoration-none">IT Consulting</a></li>
+                                    <li><a routerLink="/resource-consulting" class="text-decoration-none">Data Analytics</a></li>
+                                    <li><a routerLink="/niche-skills-training" class="text-decoration-none">Cybersecurity Services</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+  <!-- <div class="col-md-9 col-lg-6 mt-4 mt-md-0 mt-lg-0 d_sm_none border_left">
+                    <div class="footer-single-col ">
+                        <ul class="list-unstyled footer-nav-list contact_details mb-lg-0">
+                            <li><i class="fas fa-map-marker"></i> <span>First Block, 19, P&T Colony, RT Nagar, Bengaluru, Karnataka 560075</span></li>
+                            <li><i class="fas fa-envelope"></i> <span>enquries@asztechnologies.com</span></li>
+                        </ul>
+                    </div>
+                </div> -->
+  <!-- </div> -->
+  <!-- <div class="row d-md-none">
+                <div class="col-sm-12">
+                    <ngb-accordion #acc="ngbAccordion" activeIds="config-panel-one" class="footer_accordion">
+                        <ngb-panel title="Primary Pages" id="config-panel-one">
+                            <ng-template ngbPanelContent>
+                                <ul class="">
+                                    <li><a routerLink="/home" class="text-decoration-none">Home</a></li>
+                                    <li><a routerLink="/company" class="text-decoration-none">About Us</a></li>
+                                    <li><a routerLink="/career" class="text-decoration-none">Career</a></li>
+                                    <li><a routerLink="/contact-us" class="text-decoration-none">Contact Us</a></li>
+                                    <li><a class="text-decoration-none">Privacy Policy</a></li>
+                                    <li><a class="text-decoration-none">Terms & Conditions</a></li>
+                                </ul>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel title="Our Services">
+                            <ng-template ngbPanelContent>
+                                <ul class="">
+                                    <li><a routerLink="/web-development" class="text-decoration-none">Software Development</a></li>
+                                    <li><a routerLink="/sharepoint-consulting" class="text-decoration-none">Testing & QA</a></li>
+                                    <li><a routerLink="/mobile-development" class="text-decoration-none">Mobile Development</a></li>
+                                    <li><a routerLink="/bpo-services" class="text-decoration-none">UX/UI Design</a></li>
+                                    <li><a routerLink="/book-keeping" class="text-decoration-none">IT Consulting</a></li>
+                                    <li><a routerLink="/resource-consulting" class="text-decoration-none">Data Analytics</a></li>
+                                    <li><a routerLink="/niche-skills-training" class="text-decoration-none">Cybersecurity Services</a></li>
+                                </ul>
+                            </ng-template>
+                        </ngb-panel>
+                        
+                    </ngb-accordion>
+                </div>
+            </div> -->
+  <!-- </div>
+    </div> -->
+  <!--footer top end-->
+  <!--footer bottom start-->
+  <!-- <div class="footer-bottom footer-light py-4">
+        <div class="container">
+            
+                <div class="col-md-7 col-lg-12">
+                    <div class="copyright-text">
+                        <p class="mb-lg-0 mb-md-0">Copyright © 2022 ASZ Technologies. All Rights Reserved.</p>
+                    </div>
+                </div>
+               
+            
+        </div>
+    </div> -->
+  <!--footer bottom end-->
+
+  <section class="asz_footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- <div class="col-md-3">
+                    <div class="logo_asz_footer">
+                        <img src="assets/img/asz/logo-t.png">
+                    </div>
+                </div> -->
+        <div class="col-md-6">
+          <div class="copyright_content">
+            <p>Copyright © 2022 ASZ Technologies. All Rights Reserved.</p>
+          </div>
+          <!-- <div class="asz_add">
+                        <p>First Block, 19, P&T Colony, RT Nagar,
+                            Bengaluru, Karnataka 560075</p>
+                        <p class="mail_enquiry">enquries@asztechnologies.com</p>
+                    </div> -->
+        </div>
+        <div class="col-md-6">
+          <div class="coopyright_social">
+            <ul class="mb-0">
+              <!-- <li class="list-inline-item">Follow Us On</li> -->
+              <li class="list-inline-item">
+                <a
+                  href="https://www.facebook.com/asztechnologies"
+                  target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.linkedin.com/company/asz-technologies"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="mailto:info@asztechnologies.com?Subject=enquiry"
+                  target="_blank"
+                  ><i class="fa fa-envelope"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://login.skype.com/login?message=signin_continue"
+                  target="_blank"
+                  ><i class="fab fa-skype"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
+<!--footer section end-->

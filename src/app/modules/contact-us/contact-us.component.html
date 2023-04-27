@@ -1,0 +1,259 @@
+<!--page header section start-->
+
+<section class="contact-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <div class="contact_banner">
+          <span>Contact us</span>
+          <h1>How Can We Help?</h1>
+          <!-- <p>Hire experienced technology experts and software developers for your business requirements. We fully
+            integrate into clients' business to get maximum interaction and bring it to the next level.</p> -->
+          <img
+            src="../../../assets/img/asz/contact_banner.jpg"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--page header section end-->
+
+<section class="contact-promo ptb-60">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-md-6 mt-4 mt-lg-0">
+        <div class="contact-us-promo">
+          <div class="contact-promo-info">
+            <h6>Let's build the</h6>
+            <h4>next big thing!</h4>
+            <!-- <p>We'd be delighted to make your project a success.</p> -->
+            <ul>
+              <li>
+                <a href="mailto:enquries@asztechnologies.com"
+                  >enquries@asztechnologies.com</a
+                >
+              </li>
+              <!-- <li>
+                <a href="tel:+919740703030">+91 9740703030</a>
+              </li> -->
+            </ul>
+            <p class="fil_form">
+              or fill the form on the right, we will get back to you ASAP.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 col-md-6">
+        <div class="contact_us">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="heading">
+                <span>ENQUIRY</span>
+                <h4><span>Get In</span> Touch</h4>
+              </div>
+            </div>
+          </div>
+          <form [formGroup]="addForm" (ngSubmit)="submitForm()">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Name*</label>
+                  <input
+                    type="text"
+                    [formControl]="addForm.controls['name']"
+                    class="form-control"
+                    placeholder="Enter Name"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Email*</label>
+                  <input
+                    type="text"
+                    [formControl]="addForm.controls['email']"
+                    class="form-control"
+                    placeholder="Enter Email"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Subject*</label>
+                  <input
+                    type="text"
+                    [formControl]="addForm.controls['subject']"
+                    class="form-control"
+                    placeholder="Enter Subject"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Phone*</label>
+                  <input
+                    type="text"
+                    [formControl]="addForm.controls['phone']"
+                    inputmode="numeric"
+                    onlyNumbers
+                    class="form-control"
+                    placeholder="Enter Phone"
+                  />
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label>Message*</label>
+                  <textarea
+                    [formControl]="addForm.controls['message']"
+                    class="form-control"
+                    rows="5"
+                    placeholder="Enter Message"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <re-captcha
+                    (resolved)="resolved($event)"
+                    [siteKey]="googleReCaptchaSitekey"
+                  ></re-captcha>
+                  <div
+                    *ngIf="
+                      addForm.controls['reCaptcha'].invalid &&
+                      addForm.controls['reCaptcha'].touched
+                    "
+                  >
+                    <p
+                      class="help is-danger"
+                      *ngIf="addForm.controls['reCaptcha'].errors.required"
+                    >
+                      * Please fill the captcha
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group btn-flex">
+                  <button type="submit" class="mr-3 btn_sendmsg">
+                    Send Message &nbsp;&nbsp;<i class="fas fa-paper-plane"></i>
+                  </button>
+                  <!-- <button type="reset" class="btn_reset">Reset</button> -->
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+        <div class="contact-us-promo p-5 bg-white rounded-custom custom-shadow text-center d-flex flex-column h-100">
+          <img src="assets/img/asz/contact2.png" class="img-fluid">
+          <div class="contact-promo-info">
+            <h5>Email Us</h5>
+            <p>althaf@asztechnologies.com</p>
+          </div>
+          <a href="mailto:hellothemetags@gmail.com" class="btn btn-primary mt-auto">Email Us</a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+        <div class="contact-us-promo p-5 bg-white rounded-custom custom-shadow text-center d-flex flex-column h-100">
+          <img src="assets/img/asz/contact3.png" class="img-fluid">
+          <div class="contact-promo-info">
+            <h5>Give us a call</h5>
+            <p> +91 97407 03030 </p>
+          </div>
+           <a href="tel:00-976-561-008" class="btn btn-link mt-auto">00-976-561-008</a>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</section>
+
+<section class="ptb-60 locations">
+  <div class="container">
+    <h3 class="loc">LOCATIONS</h3>
+    <div class="row address-sec">
+      <div class="col-lg-6 mb-5">
+        <div class="box-bor">
+          <div class="flag-img">
+            <img
+              src="../../../assets/img/asz/if.jpg"
+              
+              alt="indian_flag-icon"
+            />
+          </div>
+          <div>
+            
+              <h3>ASZ Technologies (Headquarters)</h3>
+              <p class="address-fotter mb-0">
+                No.106, 4th floor, 10th cross, Ganganagar, Bangalore-32, India
+              </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-5">
+        <div class="box-bor">
+          <div class="flag-img">
+            <img
+              src="../../../assets/img/asz/singa-flag.jpg"
+              alt="singapore_flag_icon"
+            />
+          </div>
+          <div>
+           
+              <h3>Sagacity Consultancy</h3>
+              <p class="address-fotter mb-0">
+                156 MacPherson Rd, Singapore 348528
+              </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="col-lg-4 mb-5">
+        <div class="box-bor">
+          <div class="flag-img">
+            <img src="../../../assets/img/asz/flag_2.png" class="img-fluid" />
+          </div>
+          <h3>UK (Partner)</h3>
+          <p class="address-fotter mb-0">
+            No.106, 4th floor, 10th cross,<br />
+            Ganganagar, Bangalore-32 <br />
+          </p>
+        </div>
+      </div> -->
+
+      <!--  <div class="col-lg-4 mb-5">
+        <div class=" box-bor">
+        <div class="flag-img">
+          <img src="../../../assets/img/asz/flag_3.png" class="img-fluid" />
+        </div>
+        <h3>US</h3>
+        <p class="address-fotter mb-0">ASAHI Co., Ltd<br/>
+          Asagayakita 3-1-13, Suginami-ku, <br/>166-0001 Tokyo, Japan.</p>        
+      </div>
+      </div> -->
+    </div>
+  </div>
+</section>
+<!-- <section class="map_location">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.1711956224626!2d77.58938311404302!3d13.024767765760204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17ba8a2e2f61%3A0x5767edc1f4e7489c!2sASZ%20Technologies!5e0!3m2!1sen!2sin!4v1661522167315!5m2!1sen!2sin"
+    width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section> -->
+<div class="popup-outer" *ngIf="isShow" >
+  <div class="popup-inner">
+    <!-- <div class="pop-content"> {{this.text}} </div> -->
+    <div class="pop-content"> 
+    <h2> Thank you for getting in touch ! </h2> 
+    <p>We appreciate you contacting us. One of our colleagues will get back in touch with you soon!Have a great day!</p>
+    </div>
+  <button (click)="closepopup()" class="ok_btn">ok</button>
+ </div>
+</div>
+<loading *ngIf="isShowLoader"></loading>

@@ -1,0 +1,105 @@
+.page-header{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.feature-section{
+    .hero_img_1{
+        height: 450px;
+        width: 530px;
+    }
+}
+.section-dark{
+    background-color: #0b163f;
+    h2,h3{
+        color: #fff;
+    }
+    p{
+        color: cadetblue;
+    }
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    padding-right: 50px;
+}
+
+.bg-white{
+    background-color: #fff;
+}
+
+.h-300{
+    height: 300px;
+}
+
+.service-bg{
+.promo-border-hover:hover{
+    transform: scale(1.05);
+    background-color: #fff !important;
+}
+}
+
+.btn-primary:hover {
+    color: var(--bs-white);
+    background-color: var(--bs-dark);
+    border-color: var(--bs-dark);
+    box-shadow: none;
+}
+
+.form-check-input:checked {
+    background-color: var(--bs-dark);
+    border-color: var(--bs-dark);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: var(--bs-dark);
+    border-color: var(--bs-dark);
+}
+
+.w-64{
+    width: 64px;
+}
+.analytics-bg{
+    background: url('../../../../assets/img/blue-bg3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    &::before{
+       content: '';
+       position: absolute;
+    //    background: rgb(156 196 221 / 50%);
+       background: rgba(147, 214, 255, 0.4);
+       left: 0;
+       right: 0;
+       top: 0;
+       bottom: 0;
+    }
+}
+.service-bg{
+    background: url('../../../../assets/img/blue-bg4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    &::before{
+       content: '';
+       position: absolute;
+    //    background: rgb(156 196 221 / 50%);
+        background: rgb(7 22 32 / 50%);
+       left: 0;
+       right: 0;
+       top: 0;
+       bottom: 0;
+    }
+}
+
+.analytics-aec{
+    h2, p{
+    color: #fff;
+}
+}

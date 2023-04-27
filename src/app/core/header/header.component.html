@@ -1,0 +1,359 @@
+<header class="main-header position-absolute w-100">
+  <nav class="navbar navbar-expand-xl navbar-light sticky-header">
+    <div
+      class="container d-flex align-items-center justify-content-lg-between position-relative"
+    >
+      <a routerLink="/home" class="navbar-brand nav_logo">
+        <img src="assets/img/asz/asz_icon4.png" alt="asz_logo" class="img-fluid" />
+      </a>
+      <a
+        class="navbar-toggler position-absolute right-0 border-0"
+        role="button"
+        (click)="menutoggle()"
+      >
+        <div class="container">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </a>
+      <div class="clearfix"></div>
+      <div class="collapse navbar-collapse justify-content-right">
+        <ul class="nav main-menu">
+          <li routerLinkActive="active">
+            <a class="nav-link" routerLink="/home"><span>Home</span></a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/about-us" class="nav-link"><span>About Us</span></a>
+          </li>
+          <li routerLinkActive="active" class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span>services</span>
+            </a>
+            <div
+              class="dropdown-menu desktop_dropdown"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+              <a routerLink="/software-development" class="dropdown-link">
+                <div class="drop-title">Software Development</div>
+              </a>
+              <a routerLink="/testing-&-QA" class="dropdown-link">
+                <div class="drop-title">Testing & QA</div>
+              </a>
+              <a routerLink="/mobile-development" class="dropdown-link">
+                <div class="drop-title">Mobile Development</div>
+              </a>
+              <a routerLink="/UX/UI-design" class="dropdown-link">
+                <div class="drop-title">UX/UI Design</div>
+              </a>
+              <a routerLink="/IT-consulting" class="dropdown-link">
+                <div class="drop-title">IT Consulting</div>
+              </a>
+              <a routerLink="/data-analytics" class="dropdown-link">
+                <div class="drop-title">Data Analytics</div>
+              </a>
+              <a routerLink="/cybersecurity-services" class="dropdown-link">
+                <div class="drop-title">Cybersecurity Services</div>
+              </a>
+            </div>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/career" class="nav-link"><span>Career</span></a>
+          </li>
+          <li>
+            <a routerLink="/contact-us" class="nav-link coolBeans"
+              >Let's Talk</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- <div class="action-btns text-end me-5 me-lg-0 d-none d-md-block d-lg-block contact_no">
+                <button class="button-secondary" (click)="modalopen()">Get In Touch</button>
+            </div>
+            <div ngbDropdown class="d-inline-block language m-r-35">
+                <button type="button" class="btn btn-outline-primary border-n" id="dropdownBasic1" ngbDropdownToggle>
+                    <span class="d-none d-lg-block">English</span> <span><img class="d-lg-none flag-icon"
+                            src="assets/img/asz/indian-flag.jpg"></span> </button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="language-list">
+                    <li class="language-line"><a><img src="assets/img/asz/indian-flag.jpg">
+                            English</a></li>
+                </div>
+            </div> -->
+
+      <!--offcanvas menu start-->
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasWithBackdrop"
+        [class.show]="MenuToggle"
+      >
+        <div class="offcanvas-header d-flex align-items-center">
+          <a
+            routerLink="/home"
+            class="d-flex align-items-center mb-md-0 text-decoration-none"
+          >
+            <img
+              src="assets/img/asz/asz_icon4.png"
+              alt="logo"
+              class="img-fluid ps-2 mobile-logo"
+            />
+          </a>
+          <button
+            type="button"
+            class="close-btn bg-white text-muted h3"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+            (click)="menutoggle()"
+          >
+            <i class="fa fa-close"></i>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="nav col-12 col-md-auto justify-content-center main-menu">
+            <li routerLinkActive="active">
+              <a class="nav-link" routerLink="/home" (click)="menutoggle()"
+                ><span>Home</span></a
+              >
+            </li>
+            <li routerLinkActive="active">
+              <a routerLink="/about-us" class="nav-link" (click)="menutoggle()"
+                ><span>About Us</span></a
+              >
+            </li>
+            <li routerLinkActive="active" class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                (click)="clickToggle('services')"
+                ><span>Services</span></a
+              >
+              <div
+                class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white"
+                [class.show]="toggleServices"
+              >
+                <div
+                  class="dropdown-grid rounded-custom width-full-3"
+                  (click)="clickToggle('services'); menutoggle()"
+                >
+                  <div class="dropdown-grid-item">
+                    <a routerLink="/software-development" class="dropdown-link">
+                      <span class="me-2"
+                        ><img src="assets/img/nav-icons/s1-icon.png"
+                      /></span>
+                      <div class="drop-title">Software Development</div>
+                    </a>
+                    <a
+                      routerLink="/testing-&-QA"
+                      class="dropdown-link"
+                    >
+                      <span class="me-2"
+                        ><img src="assets/img/nav-icons/s2-icon.png"
+                      /></span>
+                      <div class="drop-title">Testing & QA</div>
+                    </a>
+                    <a routerLink="/mobile-development" class="dropdown-link">
+                      <span class="me-2"
+                        ><img src="assets/img/nav-icons/s3-icon.png"
+                      /></span>
+                      <div class="drop-title">Mobile Development</div>
+                    </a>
+                    <a routerLink="/UX/UI-design" class="dropdown-link">
+                      <span class="me-2"
+                        ><img src="assets/img/nav-icons/s4-icon.png"
+                      /></span>
+                      <div class="drop-title">UX/UI Design</div>
+                    </a>
+                    <a routerLink="/IT-consulting" class="dropdown-link">
+                      <span class="me-2"
+                        ><img src="assets/img/nav-icons/s5-icon.png"
+                      /></span>
+                      <div class="drop-title">IT Consulting</div>
+                    </a>
+                    <a routerLink="/data-analytics" class="dropdown-link">
+                      <span class="me-2"
+                        ><img src="assets/img/nav-icons/s6-icon.png"
+                      /></span>
+                      <div class="drop-title">Data Analytics</div>
+                    </a>
+                    <a
+                      routerLink="/cybersecurity-services"
+                      class="dropdown-link"
+                    >
+                      <span class="me-2"
+                        ><img src="assets/img/nav-icons/s7-icon.png"
+                      /></span>
+                      <div class="drop-title">Cybersecurity Services</div>
+                    </a>
+                  </div>
+                  <div
+                    class="dropdown-grid-item last-item bg-light radius-right-side"
+                  >
+                    <a
+                      ><img
+                        src="assets/img/feature-img3.jpg"
+                        alt="add"
+                        class="img-fluid rounded-custom"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" (click)="clickToggle('data_anal')">Data Analytics</a>
+                            <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white"
+                                [class.show]="toggleDataAnaly">
+                                <div class="dropdown-grid rounded-custom width-full-3"
+                                    (click)="clickToggle('data_anal'); menutoggle()">
+                                    <div class="dropdown-grid-item">
+                                        <a routerLink="/sentimental-analytics" class="dropdown-link">
+                                            <span class="me-2"><img src="assets/img/nav-icons/d1-icon.png"></span>
+                                            <div class="drop-title">Sentmental Analytics</div>
+                                        </a>
+                                        <a routerLink="/BI-analytics" class="dropdown-link">
+                                            <span class="me-2"><img src="assets/img/nav-icons/d2-icon.png"></span>
+                                            <div class="drop-title">BI Analytics</div>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-grid-item last-item bg-light radius-right-side">
+                                        <a><img src="assets/img/feature-img3.jpg" alt="add"
+                                                class="img-fluid rounded-custom" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> -->
+
+            <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" (click)="clickToggle('solutions')">Solutions</a>
+                            <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white"
+                                [class.show]="toggleSolutions">
+                                <div class="dropdown-grid rounded-custom width-full-3"
+                                    (click)="clickToggle('solutions'); menutoggle()">
+                                    <div class="dropdown-grid-item">
+                                        <a routerLink="/solutions" class="dropdown-link">
+                                            <span class="me-2"><img src="assets/img/nav-icons/1-icon.PNG"></span>
+                                            <div class="drop-title">Food</div>
+                                        </a>
+                                        <a routerLink="/solutions" class="dropdown-link">
+                                            <span class="me-2"><img src="assets/img/nav-icons/2-icon.PNG"></span>
+                                            <div class="drop-title">Pickup & Delivery</div>
+                                        </a>
+                                        <a routerLink="/solutions" class="dropdown-link">
+                                            <span class="me-2"><img src="assets/img/nav-icons/3-icon.PNG"></span>
+                                            <div class="drop-title">Grocery Delivery</div>
+                                        </a>
+                                        <a routerLink="/solutions" class="dropdown-link">
+                                            <span class="me-2"><img src="assets/img/nav-icons/4-icon.PNG"></span>
+                                            <div class="drop-title">Fitness App</div>
+                                        </a>
+                                        <a routerLink="/solutions" class="dropdown-link">
+                                            <span class="me-2"><img src="assets/img/nav-icons/5-icon.PNG"></span>
+                                            <div class="drop-title">Concierge App</div>
+                                        </a>
+                                        <a routerLink="/solutions" class="dropdown-link">
+                                            <span class="me-2"><img src="assets/img/nav-icons/6-icon.PNG"></span>
+                                            <div class="drop-title">Ecommerce</div>
+                                        </a>
+                                        <a routerLink="/solutions" class="dropdown-link">
+                                            <span class="me-2"><img src="assets/img/nav-icons/7-icon.PNG"></span>
+                                            <div class="drop-title">Pharmacy Delivery</div>
+                                        </a>
+
+                                        <a routerLink="/solutions" class="dropdown-link">
+                                            <span class="me-2"><img src="assets/img/nav-icons/8-icon.PNG"></span>
+                                            <div class="drop-title">Laundry</div>
+                                        </a>
+                                        <a routerLink="/solutions" class="dropdown-link">
+                                            <span class="me-2"><img src="assets/img/nav-icons/9-icon.PNG"></span>
+                                            <div class="drop-title">Home Services</div>
+                                        </a>
+
+                                        <a routerLink="/solutions" class="dropdown-link">
+                                            <span class="me-2"><img src="assets/img/nav-icons/10-icon.PNG"></span>
+                                            <div class="drop-title">Dog Walking</div>
+                                        </a>
+
+                                        <a routerLink="/solutions" class="dropdown-link">
+                                            <span class="me-2"><img src="assets/img/nav-icons/11-icon.PNG"></span>
+                                            <div class="drop-title">Taxi</div>
+                                        </a>
+                                        <a routerLink="/solutions" class="dropdown-link">
+                                            <span class="me-2"><img src="assets/img/nav-icons/12-icon.PNG"></span>
+                                            <div class="drop-title">Beauty</div>
+                                        </a>
+                                        <a routerLink="/solutions" class="dropdown-link">
+                                            <span class="me-2"><img src="assets/img/nav-icons/13-icon.PNG"></span>
+                                            <div class="drop-title">Healthcare</div>
+                                        </a>
+
+                                        <a routerLink="/solutions" class="dropdown-link">
+                                            <span class="me-2"><img src="assets/img/nav-icons/14-icon.PNG"></span>
+                                            <div class="drop-title">Education App</div>
+                                        </a>
+
+                                        <a routerLink="/solutions" class="dropdown-link">
+                                            <span class="me-2"><img src="assets/img/nav-icons/15-icon.PNG"></span>
+                                            <div class="drop-title">Freelancer</div>
+                                        </a>
+
+                                        <a routerLink="/solutions" class="dropdown-link">
+                                            <span class="me-2"><img src="assets/img/nav-icons/16-icon.PNG"></span>
+                                            <div class="drop-title">Peer-To-Peer</div>
+                                        </a>
+
+                                        <a routerLink="/solutions" class="dropdown-link">
+                                            <span class="me-2"><img src="assets/img/nav-icons/17-icon.PNG"></span>
+                                            <div class="drop-title">Deliver Safe</div>
+                                        </a>
+                                        <a routerLink="/solutions" class="dropdown-link">
+                                            <span class="me-2"><img src="assets/img/nav-icons/18-icon.PNG"></span>
+                                            <div class="drop-title">Service</div>
+                                        </a>
+                                        <a routerLink="/solutions" class="dropdown-link">
+                                            <span class="me-2"><img src="assets/img/nav-icons/19-icon.PNG"></span>
+                                            <div class="drop-title">Rental</div>
+                                        </a>
+                                        <a routerLink="/solutions" class="dropdown-link">
+                                            <span class="me-2"><img src="assets/img/nav-icons/20-icon.PNG"></span>
+                                            <div class="drop-title">E-commerce</div>
+                                        </a>
+                                        <a routerLink="/solutions" class="dropdown-link">
+                                            <span class="me-2"><img src="assets/img/nav-icons/21-icon.PNG"></span>
+                                            <div class="drop-title">Dietitian App</div>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-grid-item last-item bg-light radius-right-side">
+                                        <a><img src="assets/img/feature-img3.jpg" alt="add"
+                                                class="img-fluid rounded-custom" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> -->
+            <!-- <li><a routerLink="/blog" class="nav-link" (click)="menutoggle()">Blog</a></li> -->
+            <li routerLinkActive="active">
+              <a routerLink="/career" class="nav-link" (click)="menutoggle()"
+                ><span>Career</span></a
+              >
+            </li>
+            <li routerLinkActive="active">
+              <a
+                routerLink="/contact-us"
+                class="nav-link"
+                (click)="menutoggle()"
+                ><span>Let's Talk</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--offcanvas menu end-->
+    </div>
+  </nav>
+</header>

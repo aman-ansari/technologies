@@ -1,0 +1,254 @@
+.contact_no button {
+  border-radius: 0px;
+  margin-right: 20px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  // &::before {
+  // 	content: '';
+  // 	position: absolute;
+  // 	z-index: -2;
+  // 	left: -50%;
+  // 	top: -50%;
+  // 	width: 200%;
+  // 	height: 200%;
+  // 	background-color: #399953;
+  // 	background-repeat: no-repeat;
+  // 	background-size: 50% 50%, 50% 50%;
+  // 	background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  // 	background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+  // 	animation: rotate 4s linear infinite;
+  // }
+
+  // &::after {
+  // 	content: '';
+  // 	position: absolute;
+  // 	z-index: -1;
+  // 	left: 6px;
+  // 	top: 6px;
+  // 	width: calc(100% - 12px);
+  // 	height: calc(100% - 12px);
+  // 	background: white;
+  // 	border-radius: 5px;
+  // }
+}
+
+// @keyframes rotate {
+// 	100% {
+// 		transform: rotate(1turn);
+// 	}
+// }
+.main-header {
+  z-index: 9;
+  background-color: var(--bs-white);
+  border: 1px #ccc dotted;
+  box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 5%);
+  top: 0;
+}
+
+select.selectpicker {
+  /* padding: 8px 14px; */
+  border-radius: 24px;
+  width: 148px;
+  padding: 5px 5px;
+  background: #fcdde1;
+  border: 1px solid #ba7f87;
+}
+
+.btn .caret {
+  margin-left: 0;
+  display: none;
+}
+
+li.language-line {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 5px 15px;
+}
+
+li.language-line img {
+  width: 48px;
+  padding-right: 14px;
+}
+
+li.language-line a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn-soft-primary:hover,
+.btn-outline-primary:hover {
+  color: #1879c0;
+  background: transparent;
+  border-color: #1879c0;
+}
+
+.btn {
+  border: 1px solid #1879c0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 24px;
+}
+
+.dropdown-menu {
+  min-width: 12rem;
+  padding: 0;
+}
+
+// .dropdown-grid-item:focus-within{
+//   display: none;
+// }
+
+
+// nav-iocn style
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 25px;
+  height: 3px;
+  background-color: #3188ae;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 4px);
+  transform: rotate(-45deg) translate(-9px, 4px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -4px);
+  transform: rotate(45deg) translate(-8px, -4px);
+}
+
+@media (max-width: 991px) {
+  .flag-icon {
+    width: 30px;
+  }
+
+  .m-r-35 {
+    margin-right: 60px;
+  }
+
+  .border-n {
+    border: none;
+  }
+}
+
+@keyframes lds-ripple {
+  0% {
+    outline: 4px solid #eee;
+  }
+
+  100% {
+    outline: 4px solid #eee;
+  }
+}
+
+@media (max-width: 991px) {
+
+
+  .sticky-header {
+    padding: 0 0 !important;
+  }
+}
+
+.coolBeans {
+  border: 1px solid #ef881f;
+  color: #fff !important;
+  background-color: #ef881f;
+  transition: all 0.4s ease-out;
+  margin-left: 14px;
+  padding: 6px 20px;
+
+  &:hover {
+    transition: all 0.4s ease-out;
+    background-color: transparent;
+    color: #ef881f !important;
+  }
+}
+
+.nav_logo {
+  img {
+    width: 150px;
+
+    @media (max-width: 991px) {
+      width: 115px;
+    }
+  }
+
+}
+
+.main-menu {
+  align-items: center;
+
+  li {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.desktop_dropdown {
+  width: 270px;
+  padding: 20px;
+  transform: translate(-39%, 0);
+
+  .dropdown-link {
+    display: flex;
+    text-decoration: none;
+    padding: 0.55rem 1rem !important;
+
+    span {
+      font-size: 14px;
+
+      img {
+        width: 27px
+      }
+    }
+  }
+}
+
+.active {
+
+  a {
+    color: #ef881f !important;
+
+    span {
+      border-bottom: 2px solid #ef881f;
+      // transition: all 0.4s ease-out;
+    }
+  }
+}
+.mobile-logo{
+  max-width: 110px;
+}
+@media (min-width:1025px) {
+  .navbar-toggler{
+    display: none;
+  }
+}
+@media (max-width:1024px) {
+  .nav-item{
+    &.active{
+    .dropdown-grid{
+      a{
+      span{
+        border-bottom: 0 !important;
+      }
+    }
+    }
+  } 
+}
+}

@@ -1,0 +1,257 @@
+<section class="heading_banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="banner_content">
+                    <h2>COME INNOVATE WITH US</h2>
+                    <p>
+                        COME INNOVATE WITH US
+                        Find your next career opportunity at ASZ Technologies. We heartily welcome talented and
+                        enthusiastic people to join our team.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="our_benefits">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12 col-lg-6">
+                <div class="contact-us-promo">
+                   <img src="assets/img/career2.jpg" class="img-fluid">
+                  </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <div class="heading">
+                    <h2><span>SOME</span> OF OUR BENEFITS</h2>
+                </div>
+                <div class="benefits_list">
+                    <ul>
+                        <li>Competitive pay, annual and ad-hoc bonuses</li>
+                        <li>Private Medical Insurance</li>
+                        <li>Work from home and flexible working hours</li>
+                        <li>A cosy office for co-working and socialisation</li>
+                        <li>Multicultural environment - working with colleagues and clients across different
+                            geographies.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="career">
+    <div class="container">
+        <div class="row">
+            <div class="career-block">
+                <div class="col-md-6">
+                    <div class="heading">
+                        <h2><span>WANT</span> TO JOIN ASZ ?</h2>
+                        <h2>APPLY NOW!</h2>
+                    </div>
+                    <div class="hero-img position-relative circle-shape-images">
+                        <ul class="position-absolute animate-element parallax-element circle-shape-list">
+                            <!-- <li class="layer" data-depth="0.03">
+                                <img src="assets/img/shape/circle-1.svg" alt="shape"
+                                    class="circle-shape-item type-0 hero-1">
+                            </li> -->
+                            <li class="layer" data-depth="0.02">
+                                <img src="assets/img/shape/circle-1.svg" alt="shape"
+                                    class="circle-shape-item type-1 hero-1">
+                            </li>
+                            <li class="layer" data-depth="0.04">
+                                <img src="assets/img/shape/circle-1.svg" alt="shape"
+                                    class="circle-shape-item type-2 hero-1">
+                            </li>
+                            <li class="layer" data-depth="0.04">
+                                <img src="assets/img/shape/circle-1.svg" alt="shape"
+                                    class="circle-shape-item type-3 hero-1">
+                            </li>
+                            <li class="layer" data-depth="0.03">
+                                <img src="assets/img/shape/circle-1.svg" alt="shape"
+                                    class="circle-shape-item type-4 hero-1">
+                            </li>
+                            <li class="layer" data-depth="0.03">
+                                <img src="assets/img/shape/circle-1.svg" alt="shape"
+                                    class="circle-shape-item type-5 hero-1">
+                            </li>
+                        </ul>
+                        <div class="form_banner">
+                            <img src="../../../assets/img/asz/career_form.jpg" class="img-fluid" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="current-form">
+                        <form [formGroup]="addForm" (ngSubmit)="submitForm()">
+                            <div class="field">
+                                <label>Your Name &nbsp;<span>*</span></label>
+                                <input type="text" [formControl]="addForm.controls['name']" class="input" />
+                            </div>
+                            <div class="field">
+                                <label>Email &nbsp;<span>*</span></label>
+                                <input type="email" [formControl]="addForm.controls['email']" class="input" />
+                            </div>
+                            <div class="field">
+                                <label>The role you're applying for &nbsp;<span>*</span></label>
+                                <input type="text" [formControl]="addForm.controls['role']" class="input" />
+                            </div>
+                            <div class="field">
+                                <label>LinkedIn Url &nbsp;<span>*</span></label>
+                                <input type="text" [formControl]="addForm.controls['linkedIn']" name="LinkedIn"
+                                    class="input" />
+                            </div>
+                            <div class="field">
+                                <label>Upload CV/Resume &nbsp;<span>*</span></label>
+                                <div class="resume">
+                                    <div class="upload-btn">
+                                        <i class="fa fa-paperclip"></i>
+                                        <span class="hidden-xs"> Upload Resume </span>
+
+                                        <input type="file" #fileInput
+                                            accept=".pdf,.PDF,.doc,.docx,.txt,.odt,.rtf,.tex,.wpd"
+                                            (change)="fileChangeEvent($event)" name="resume">
+
+                                    </div>
+                                    <span *ngIf="addForm.controls['file'].valid && selectedFile"
+                                        class="text-warning">{{selectedFile?.name}}</span>
+                                    <div *ngIf="addForm.controls['file'].invalid && addForm.controls['file'].touched">
+                                        <p class="help is-danger" *ngIf="addForm.controls['file'].errors.required">
+                                            * Please upload your resume.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- div to show reCAPTCHA -->
+                            <re-captcha (resolved)="resolved($event)" [siteKey]="googleReCaptchaSitekey"></re-captcha>
+                            <div *ngIf="addForm.controls['reCaptcha'].invalid && addForm.controls['reCaptcha'].touched">
+                                <p class="help is-danger" *ngIf="addForm.controls['reCaptcha'].errors.required">
+                                    * Please fill the captcha
+                                </p>
+                            </div>
+                            <div class="applynow">
+                                <button type="submit" class="btn_submit">APPLY NOW</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="current_openings">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading">
+                    <h2><span>CURRENT</span> OPENINGS</h2>
+                </div>
+                <div class="no-opening">
+                    <h3>No Opening </h3>
+                </div>
+                <!-- <div class="job_openings">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="openings">
+                                <button type="button" class="btn btn-outline-primary" (click)="collapse.toggle()"
+                                    [attr.aria-expanded]="!isCollapsed2" aria-controls="collapseExample">
+                                    UI/UX DESIGNER
+                                    <span>+</span>
+                                </button>
+                                <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="opening_head">
+                                                <p>We are looking for a Front-End Software Developer to join our team
+                                                    and mission, thinking about how the things we build can help people
+                                                    live healthier, happier, better lives. </p>
+                                                <p>We’re looking for nice people that can help us on various development
+                                                    projects. Depending on your skills, areas that you like best and
+                                                    overall experience, one or another might suit you better. </p>
+                                            </div>
+
+                                            <div class="opening_location">
+                                                <h5>Location: <span>Bangalore</span></h5>
+                                            </div>
+                                            <div class="key_responsiblities">
+                                                <h4>Main responsibilities:</h4>
+                                                <ul>
+                                                    <li>Design websites, interfaces, landing pages, web apps, and
+                                                        whatever else comes up. If it’s something people look at on a
+                                                        screen, it’s fair game.</li>
+                                                    <li>Team up with designers, developers, producers, and strategists,
+                                                        though sometimes you’ll fly solo</li>
+                                                    <li>Create mockups, wireframes, process flows, and prototypes that
+                                                        define interaction and/or interface for new and existing
+                                                        products and features</li>
+                                                    <li>Design intuitive and clean user flows that set the vision for
+                                                        our user experience</li>
+                                                    <li>Collaborate with clients and developers to clarify requirement
+                                                        and handoff design mockups that ensure the fidelity of designs &
+                                                        product requirements</li>
+                                                    <li>Participate in product feedback meetings, work to understand the
+                                                        users' pain points and make product decisions</li>
+                                                    <li>Understand and enforce standards for a consistent, high-quality
+                                                        user experience</li>
+                                                    <li>Maintain and contribute to the brand ecosystem and asset library
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="experience_need">
+                                                <h4>Skills and experience:</h4>
+                                                <ul>
+                                                    <li>At least 3 years of proven experience designing digital products
+                                                        that offer clear and simple user interfaces and provide "best in
+                                                        class" user experiences for customers</li>
+                                                    <li>Experience with design and prototyping tools like Sketch, Figma,
+                                                        Adobe XD (or others)</li>
+                                                    <li>Webflow, Wix, Squarespace and/or Hubspot experience is nice to
+                                                        have </li>
+                                                    <li>Have a great eye for detail, style, and a deep knowledge of
+                                                        UI/UX best practices</li>
+                                                    <li>Have created wireframes, moodboards, design concepts, and
+                                                        prototypes, based on specs and strategy documents</li>
+                                                    <li>Strong communication skills (in English) to manage cross
+                                                        functional feedback and influence product growth</li>
+                                                    <li>Human centered design approach and design thinking</li>
+                                                    <li>Ability to transform abstract ideas into concrete designs</li>
+                                                </ul>
+                                            </div>
+                                            <div class="send_query">
+                                                <p>We love the people we work with, both internally and externally.
+                                                    We're really good at making software and we're on a mission to do
+                                                    more for this world. Thanks for tuning into our journey. We look
+                                                    forward to meeting you, and maybe even building something great
+                                                    together - get in touch:</p>
+                                                <a
+                                                    href="mailto:careers@asztechnologies.com">careers@asztechnologies.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="popup-outer" *ngIf="isShow" >
+    <div class="popup-inner">
+      <!-- <div class="pop-content"> {{this.text}} </div> -->
+      <div class="pop-content"> 
+      <h2> Thank you for getting in touch ! </h2> 
+      <p>We appreciate you contacting us. One of our colleagues will get back in touch with you soon!Have a great day!</p>
+      </div>
+    <button (click)="closepopup()" class="ok_btn">ok</button>
+   </div>
+  </div>
+<loading *ngIf="isShowLoader"></loading>
